@@ -24,10 +24,7 @@
 #include <time.h>
 using namespace std;
 
-int main()
-{
-    setlocale(LC_ALL, "Russian");
-
+int main() {
     srand(time(0));
     int random_number = rand() % 100 + 1;
 
@@ -35,18 +32,16 @@ int main()
 
     int user_try;
 
-    while (true)
-    {
-        cout << "Введите Вашу " << ++guess_counter << " попытку: ";
-        cisn >> user_try;
+    while (true) {
+        cout << "\nEnter your " << ++guess_counter << " trial number: ";
+        cin >> user_try;
 
         if (user_try < random_number)
-            cout << "Надо больше!\n" << endl;
+            cout << "Greater!\n" << endl;
         else if (user_try > random_number)
-            cout << "Надо меньше!\n" << endl;
-        else
-        {
-            cout << "\nВы победили! Всего попыток затрачено: " << guess_counter << endl;
+            cout << "Less!\n" << endl;
+        else {
+            cout << "\nCongratulations! Trials wasted: " << guess_counter << endl;
             break;
         }
     }

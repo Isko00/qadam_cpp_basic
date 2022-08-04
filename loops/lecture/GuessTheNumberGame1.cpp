@@ -24,28 +24,24 @@
 #include <time.h>
 using namespace std;
 
-int main()
-{
-    setlocale(LC_ALL, "Russian");
-
+int main() {
     srand(time(0));
     int random_number = rand() % 100 + 1;
 
     int guess_counter = 0;
 
-    cout << "Введите Вашу " << ++guess_counter << " попытку: ";
+    cout << "Enter your " << ++guess_counter << " trial number: ";
     int user_try;
     cin >> user_try;
 
-    while (user_try != random_number)
-    {
-        cout << (user_try < random_number) ? "Надо больше" : "Надо меньше" << endl;
+    while (user_try != random_number) {
+        cout << ((user_try < random_number) ? "Greater" : "Less") << endl;
 
-        cout << "\nВведите Вашу " << ++guess_counter << " попытку: ";
+        cout << "\nEnter your " << ++guess_counter << " trial number: ";
         cin >> user_try;
     }
 
-    cout << "\nВы победили! Всего попыток затрачено: " << guess_counter << endl;
+    cout << "\nCongratulations! Trials wasted: " << guess_counter << endl;
 
     return 0;
 }

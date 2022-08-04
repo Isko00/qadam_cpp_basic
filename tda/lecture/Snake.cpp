@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
-int main()
-{
+int main() {
     setlocale(LC_ALL, "Russian");
 
     // Вводим размер квадратной матрицы.
@@ -19,10 +18,8 @@ int main()
             cin>>a[i][j]; */
 
     int counter = 1;
-    for (int i = 0; i < aSize; i++)
-    {
-        if (i % 2 == 0)
-        {
+    for (int i = 0; i < aSize; i++) {
+        if (i % 2 == 0) {
             for (int j = 0; j < aSize; j++)
                 a[i][j] = counter++;
         } else {
@@ -31,14 +28,11 @@ int main()
         }
 
         cout << endl;
-
     }
 
     cout << "\nSnake:\n" << endl;
-    for (int i = 0; i < aSize; i++)
-    {
-        for (int j = 0; j < aSize; j++)
-        {
+    for (int i = 0; i < aSize; i++) {
+        for (int j = 0; j < aSize; j++) {
             cout << a[i][j] << " ";
         }
         cout << endl;
