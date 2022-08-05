@@ -12,10 +12,10 @@ int main() {
     int a[100][100];
 
     // Заполняем квадратную матрицу элементами.
-    /* cout<<"\nВведите "<<aSize*aSize<<" элементов:"<<endl;
-    for(int i = 0; i < aSize; i++)
-        for(int j = 0; j < aSize; j++)
-            cin>>a[i][j]; */
+    cout << "\nВведите " << aSize * aSize << "элементов: " << endl;
+    for (int i = 0; i < aSize; i++)
+        for (int j = 0; j < aSize; j++)
+            cin >> a[i][j]; 
 
     int counter = 1;
     for (int i = 0; i < aSize; i++) {
