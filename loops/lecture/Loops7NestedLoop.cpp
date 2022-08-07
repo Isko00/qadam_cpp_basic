@@ -40,14 +40,42 @@ int main()
     * и так далее, то есть, ещё раз:
     * На КАЖДЫЙ шаг внешнего цикла выполняются ВСЕ шаги внутреннего */
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0, k = 0; i < 8; i++)
     {
-        for (int j = 10; j < 13; j++)
-        {
-            cout << "i = " << i << "\t\tj = " << j << endl;
+        for (int j = 0; j < 8; j++)
+        {   
+            if ((j == 0 || j == 7) || (i == 0 || i == 7)) {
+                k = 1;
+            } else {
+                k = 0;
+            }
+            cout << k << " ";
         }
         cout << endl;
     }
+    
+    cout << endl << endl;
 
+
+    int k, l;
+    for (int i = 0; i < 8; i++)
+    {   
+        if (i % 2 == 0) {
+            l = 1;
+        } else {
+            l = 0;
+        }
+
+        for (int j = 0; j < 8; j++)
+        {   
+            if (j % 2 == l) {
+                k = 1;
+            } else {
+                k = 0;
+            }
+            cout << k << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }
