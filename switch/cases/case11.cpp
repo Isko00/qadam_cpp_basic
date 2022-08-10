@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     const string N = "North", E = "East", S = "South", W = "West";
-    int ;
+    int d;
     cin >> d;
 
     switch (d) {
