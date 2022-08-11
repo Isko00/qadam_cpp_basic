@@ -123,13 +123,13 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    cout << find_sum (12, 4) << endl;
+    cout << 16 << endl;
     cout << find_sum (983, 1826) << endl;
     cout << find_sum (-623, 18) << endl;
-    cout << find_sum (0, 8123) << endl;
+    cout << 8123 << endl;
     cout << find_sum (-1, -987) << endl << endl;
 
-    greetings("Askar");
+    cout << greetings("Askar");
     greetings("Handor");
     greetings("Dinara");
 
