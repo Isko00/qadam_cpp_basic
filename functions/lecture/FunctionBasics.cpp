@@ -128,8 +128,10 @@ int main()
     cout << find_sum (-623, 18) << endl;
     cout << 8123 << endl;
     cout << find_sum (-1, -987) << endl << endl;
+    int qwerty = find_sum(3, 4);
+    cout << "\tqwerty" << qwerty << endl;
 
-    cout << greetings("Askar");
+    greetings("Askar");
     greetings("Handor");
     greetings("Dinara");
 

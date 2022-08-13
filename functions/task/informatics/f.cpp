@@ -3,10 +3,10 @@
 
 using namespace std;
 
-double power(double num, int a) {
+double power(double num, double *pNum, int a) {
     if (a > 0) {
         //cout << "num[" << num << "], a[" << a << "]" << endl;
-        return num * power(num, --a);
+        return power(num * (*pNum), --a);
     } 
     
     if (a == 0) {
