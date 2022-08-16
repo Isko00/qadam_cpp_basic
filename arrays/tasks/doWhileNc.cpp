@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
     int input = 4, cnt = 0, a[100];
+    
     do {
         a[cnt++] = input;
         cin >> input;
