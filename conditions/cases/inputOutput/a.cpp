@@ -1,5 +1,7 @@
 // библиотека для ввода и вывода в консоль
 #include <iostream>
+// библиотека метематических функций
+#include <cmath>
 // стандартное пространство имен
 using namespace std;
 // главная функция
@@ -7,11 +9,30 @@ int main()
 // открываем тело функции
 {
     // инициализация целочисленных переменных
-    int num1, num2, answer;
+    int num1, num2;
+    int squareOfNum1, squareOfNum2;
+    // ответ будет дробный, потому что например 
+    // если стороны будут 10 и 2, то ответ 10.198
+    double answer;
     // ввод значений для переменных с консоли
     cin >> num1 >> num2;
+    /* функция pow(number, degree) принимает 2 числа
+     * первое число возводит в степень второго
+     * число number в степень degree
+     * в нашем примере число num1 во вторую степень
+     */
+    squareOfNum1 = num1 * num1;
+    // альтернативное решение
+    // squareOfNum1 = pow(num1, 2);
+    squareOfNum2 = num2 * num2;
+    // squareOfNum2 = pow(num2, 2);
+
     // присваивание значения переменной answer
-    answer = (num1 * num1) + (num2 * num2);
+    /*
+     * функция sqrt(number) высчитывает 
+     * квадратный корень числа в скобках
+     */
+    answer = sqrt(squareOfNum1 + squareOfNum2);
     // вывод значения переменной answer в консоль
     cout << answer;
     // конец работы функции 
