@@ -1,4 +1,5 @@
 #include <iostream>
+// импортируем математическую библиотеку
 #include <cmath>
 
 using namespace std;
