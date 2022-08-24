@@ -88,20 +88,49 @@
 using namespace std;
 
 /* Простая функция, которая возвращает сумму двух переданных ей параметров */
-int find_sum (int x, int y)
-{
-    return x + y;
+int find_sum (int x = 3, int y) {
+    int sum = x + y;
+    return sum;
 }
 
 /* Пример void метода, который принимает один String в качестве имени
 * и привествует, основываясь на этом имени*/
-void greetings (string name)
-{
-    cout << "Hello " << name << "! Nice to meet you!" << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void greetings (char c) {
+    cout << c;
 }
 
+int main() {
+    greeting('A');
+}
+
+
+
+
+/*
+1) создать функцию с типом возвращаемого значения bool
+2) назвать функцию is_even
+3) в аттрибутах указать одну переменную типа int
+4) функция возвращает 1, если остаток от деления аттрибута на 2 равен нулю
+5) функция возвращает 0, если остаток от деления аттрибута на 2 не равен нулю
+6) вызвать функцию в функции main() и вывести возвращенное значение в консоль
+*/
 bool is_multiple_by_7 (int number)
 {
+    // проверка, что остаток от деления аттрибута на 7 равен нулю
     return number % 7 == 0;
 }
 
@@ -114,8 +143,11 @@ int my_pow (int base, int power)
     return prod;
 }
 
+
+
 int find_y (int x)
 {
+    // y = x^5 - x^4 + x^3 - x^2 + x
     return my_pow(x, 5) - my_pow(x, 4) + my_pow(x, 3) - my_pow(x, 2) + x;
 }
 
@@ -124,13 +156,21 @@ int main()
     setlocale(LC_ALL, "Russian");
 
     cout << 16 << endl;
-    cout << find_sum (983, 1826) << endl;
+    cout << find_sum (983, 1826) + 1 << endl;
+    int qwe = find_sum(12, 13);
+    cout << "qwe = " << qwe << endl;
     cout << find_sum (-623, 18) << endl;
     cout << 8123 << endl;
     cout << find_sum (-1, -987) << endl << endl;
     int qwerty = find_sum(3, 4);
     cout << "\tqwerty" << qwerty << endl;
 
+    cout << is_mul
+
+
+    cout << "hello";
+    is_even("Carl");
+    cout << 
     greetings("Askar");
     greetings("Handor");
     greetings("Dinara");

@@ -2,18 +2,21 @@
 
 using namespace std;
 
-int main() {
-	int size;
-	cin >> size;
+int main() { 
+                //       0       1        2       3
+    int arr[3][2] = {{3, 4}, {5, 2}, {7, 0}};
 
-	int arr[size];
-	for (int i = 0; i < size; i++) {
-		cin >> arr[i];
-	}
+    cout << arr[2][1] << endl;
 
-	for (int i = 0; i < size; i += 2) {
-		cout << arr[i] << " ";
-	}
+    for (int i = 0; i < 3; i++) {
+        cout << "arr[" << i << "]:";
 
-	return 0;
+        for (int j = 0; j < 2; j++) {
+            cout << arr[i][j] << " ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
 }
