@@ -8,7 +8,7 @@ void only_alpha(char* c) {
     int index = 0;
 
     for (int i = 0; c[i] != '\0'; i++) {
-        if (isalpha(*(c + i))) {
+        if (isdigit(*(c + i))) {
             new_c[index] = *(c + i);
             index = index + 1;
         }

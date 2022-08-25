@@ -9,8 +9,6 @@ void count_integers(char const * c, int* counter) {
     }
 }
 
-int** arr[];
-
 int main() {
     char c[100];
 
