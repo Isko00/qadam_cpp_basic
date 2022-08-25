@@ -1,4 +1,7 @@
 #include <iostream>
+
+#include <cmath>
+
 #include <cctype>
 
 using namespace std;
