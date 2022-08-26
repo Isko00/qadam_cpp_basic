@@ -24,10 +24,11 @@ using namespace std;
 
 int main()
 {
+/*
     char fullName[100];
     cout<<"Vvedite vashe polnoe imya: ";
     cin.getline(fullName, 100); /* Можете ввести вашу фамилию, затеи пробел, затем имя, затем еше пробел, затем отчество */
-
+/*
     int age;
     cout<<"Vvedute vash vozrast: ";
     cin>>age;
@@ -37,10 +38,19 @@ int main()
     cin>>speciality; /* Можете ввести аббревиатуру вашей специальности, НО не специальность полностью, так как пробелы в данном
                         варианте ввода не допускаются, и если вы введете Information Systems, то в массив
                         запишется только Information */
-
-    cout<<"\nMy full name is: "<<fullName
+/*
+    cout<<"\nMy full name is: "<< (fullName + 1)
     <<endl<<"I am "<<age<<" years old"
     <<endl<<"My speciality: "<<speciality<<endl;
+*/
+
+    char array[6] = {'q', 'w', 'e', 'r', 't', '\0'};
+    
+    cout << array + 3 << endl;
+
+    int array2[6] = {1, 2, 3, 4, 5, 6};
+
+    cout << *(array2 + 3);
 
     return 0;
 }

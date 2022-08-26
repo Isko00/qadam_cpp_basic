@@ -32,7 +32,14 @@ int main()
     cout<<"Создаём массив."<<endl;
     cout<<"Называем его \"testArray1\""<<endl;
     cout<<"Заполяем его элементами 78, 47, 12, 45, 69, 15, 42, 24"<<endl;
-    int testArray1[] = {78, 47, 12, 45, 69, 15, 42, 24};
+                         
+    int testArray1[8] = {78, 47, 12, 45, 69, 15, 42, 24};
+    cout << "testArray1[4] = " << testArray1[4] << endl;
+    testArray1[2] = 0;
+    cout << "testArray1[2] = " << testArray1[2] << endl;
+
+    char array[4] = {'q', 'w', 'e', '\0'};
+    cout << array << endl;
 
      /*
      * Чтобы обратиться к конкретному элементу массива,

@@ -6,14 +6,14 @@ using namespace std;
 void iitu(char* c, bool* b) {
   for (int i = 0; i < strlen(c) - 3; i++) {
     if (c[i] == 'i' && c[i + 1] == 'i' && c[i + 2] == 't' && c[i + 3] == 'u')
-        *b = true;
+        *b = 1; 
   }
 }
 
 int main()
 {
   char c[1000];
-  bool b = false;
+  bool b = 0;
   cin >> c;
 
   for (int i = 0 ; i < strlen(c); i++)

@@ -1,16 +1,21 @@
 #include <iostream>
-#include <string>
+
 using namespace std;
 
-struct Table {
-  int characteristics[2] = {4, 5};
-  
+// создать структуру компьютер 
+// создать у этой структуры аттрибут вес = 10
+// создать метод типа инт, который возвращает нам вес
+// использовать структуру в функции мейн
+struct EnemySpaceShip {
+    int x_coordinate = 2;
+    int y_coordinate = 3;
+    int weapon_power;
+    
+    int getNewEnemy() {
+        return 0;
+    }
 };
 
-int main() { 
-  Table table1;
-  cout << table1.characteristics[0] << endl; 
-  
-  Table table3;
-  cout << table1.characteristics[1] << endl; 
+int main() {
+    int a = getNewEnemy();
 }

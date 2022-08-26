@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cctype>
+
 using namespace std;
 
 void count_integers(char const * c, int* counter) {

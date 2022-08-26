@@ -88,37 +88,16 @@
 using namespace std;
 
 /* Простая функция, которая возвращает сумму двух переданных ей параметров */
-int find_sum (int x = 3, int y) {
+int find_sum (int x, int y) {
     int sum = x + y;
     return sum;
 }
 
 /* Пример void метода, который принимает один String в качестве имени
 * и привествует, основываясь на этом имени*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void greetings (char c) {
     cout << c;
 }
-
-int main() {
-    greeting('A');
-}
-
-
-
 
 /*
 1) создать функцию с типом возвращаемого значения bool
@@ -139,7 +118,7 @@ int my_pow (int base, int power)
     int prod = 1;
     for (int i = 0; i < power; i++)
         prod *= base;
-
+        
     return prod;
 }
 
@@ -156,7 +135,7 @@ int main()
     setlocale(LC_ALL, "Russian");
 
     cout << 16 << endl;
-    cout << find_sum (983, 1826) + 1 << endl;
+    cout << find_sum (983, 1826) << endl;
     int qwe = find_sum(12, 13);
     cout << "qwe = " << qwe << endl;
     cout << find_sum (-623, 18) << endl;
@@ -164,8 +143,8 @@ int main()
     cout << find_sum (-1, -987) << endl << endl;
     int qwerty = find_sum(3, 4);
     cout << "\tqwerty" << qwerty << endl;
+    cout << greetings('A');
 
-    cout << is_mul
 
 
     cout << "hello";
