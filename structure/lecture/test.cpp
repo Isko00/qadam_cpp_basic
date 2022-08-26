@@ -17,5 +17,6 @@ struct EnemySpaceShip {
 };
 
 int main() {
-    int a = getNewEnemy();
+    EnemySpaceShip a;
+    int number = a.getNewEnemy();
 }
