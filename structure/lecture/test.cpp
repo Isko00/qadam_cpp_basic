@@ -1,23 +1,24 @@
 #include <iostream>
-#include <string>
+#include <vector>
+#include <queue>
+#include <stack>
 using namespace std;
 
-// создать структуру компьютер 
-// создать у этой структуры аттрибут вес = 10
-// создать метод типа инт, который возвращает нам вес
-// использовать структуру в функции мейн
-struct Computer {
-    int weight = 10;
-    
-    int get_weight() {
-        return weight;
+// создать вектор символов с 3 символами
+// с помощью метода push_back(4) добавить еще 1 символ
+
+struct comp{
+    int zxc = 1;
+    int get_zxc() {
+        return zxc;
     }
 };
 
 int main() {
-    Computer my_computer;
+    int a;
+    comp bin;
 
-    cout << my_computer.get_weight();
+    cout << bin.get_zxc();
 
     return 0;
 }

@@ -44,7 +44,7 @@ int main()
     int arr[5] = {73, 115, 108, 97, 109};
 
     for (int i = 0; i < 5; i++) {
-        cout << (char)arr[i];
+        cout << (char) arr[i];
     }
     cout << endl;
     //system("pause");
