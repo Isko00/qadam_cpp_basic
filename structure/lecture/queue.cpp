@@ -10,9 +10,12 @@ int main() {
 	for (int i = 0; i < 5; i++) {
 		my_queue.push(i);
 	}
-	for (int i = 0; i < 5; i++) {
+
+	my_queue.push(150);
+
+	for (int i = 0; i < 6; i++) {
 		// получаем первый элемент в очереди с помощью метода front()
-		cout << my_queue.front();
+		cout << my_queue.front() << " ";
 		// метод pop() удаляет первый элемент
 		my_queue.pop();
 	}

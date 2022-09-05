@@ -36,7 +36,7 @@ struct Queue {
             delete temp;
             return v;
         } else {
-            cerr << "empty stack" << endl;
+            cerr << "empty queue" << endl;
             return 0;
         }
     }
@@ -50,7 +50,9 @@ struct Queue {
     }
 
     void free() { 
-        while (!empty()) pop(); 
+        while (!empty()) {
+            pop(); 
+        }
     }
 
     ~Queue() {
