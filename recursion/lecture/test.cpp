@@ -2,18 +2,15 @@
 
 using namespace std;
 
-void find_sum(int number, int* sum) {
-    *sum += number % 10;
-
-    if (number > 10) {
-        find_sum(number / 10, sum);
+void rec(int number) {
+    if (number > 0) { 
+        rec(number - 1);
     }
+    cout << number << endl;
 }
 
 int main() {
-    int n = 12445, sum = 0;
+    rec(5);
 
-    find_sum(n, &sum);
-
-    cout << sum;
+    return 0;
 }

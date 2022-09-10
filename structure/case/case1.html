@@ -1,0 +1,50 @@
+<!-- Всякая стандартная штука как #include <iostream> using namespace std;-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!-- Создаем объекты страницы -->
+	<div id="exp">
+		<!-- Создаем картинку -->
+		<!-- Указываем адрес(ссылку где взяли) -->
+		<!-- Указывает какую функцию сделать если нажали -->
+		<!-- Уменьшаем ширину картинки, чтобы была 400 пикселей -->
+		<img 
+			src="https://www.kino-teatr.ru/news/26386/232584.jpg" 
+			alt="" onclick="myFunction()"
+			style="width: 400px;">
+	</div>
+	<!-- Пишем код функции -->
+	<script>
+		function myFunction() {
+			// Создаем объект, он это и есть место где на странице картинка
+		  	var exp = document.getElementById("exp");
+		  	// Создаем переменную текста
+		  	var text = '<a class="text" href="https://www.youtube.com/watch?v=S8p63B_xe2M&ab_channel=WillSmith">Will Smith</p>';
+		  	// с помощью метода добавляем переменную в объект над картинкой
+		  	exp.insertAdjacentHTML('afterbegin', text);
+		}
+	</script>
+	<!-- Пишем стили, чтобы все смотрелось красиво -->
+	<style type="text/css">
+		.text {
+			font-family:verdana;
+		}
+		#exp {
+			width:400px;
+			text-align:center;
+			margin: auto;
+			border: 3px solid green;
+			padding: 10px;
+		}
+		a:link {
+			color: black;
+			text-decoration: none;
+		}
+	</style>
+</body>
+</html>

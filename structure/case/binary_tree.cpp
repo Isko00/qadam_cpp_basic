@@ -16,7 +16,7 @@ struct Node {
 };
 
 void iterate(Node *n){
-    if(!n) {
+    if(n == NULL) {
         return;
     }
 
@@ -113,11 +113,11 @@ void addNode(Node* root, int data) {
 }
 
 int main() {
- 
+
     /*create root*/
     Node* root = new Node(3);
     /* following is the tree after above statement
- 
+
              3
             / \
         NULL   NULL
