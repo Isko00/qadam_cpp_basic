@@ -32,7 +32,7 @@ int main()
     cout<<"Создаём массив."<<endl;
     cout<<"Называем его \"testArray1\""<<endl;
     cout<<"Заполяем его элементами 78, 47, 12, 45, 69, 15, 42, 24"<<endl;
-                         
+    int a, b;          
     int testArray1[8] = {78, 47, 12, 45, 69, 15, 42, 24};
     cout << "testArray1[4] = " << testArray1[4] << endl;
     testArray1[2] = 0;
@@ -64,7 +64,6 @@ int main()
     cout<<"Называем его \"testArray2\""<<endl;
     cout<<"Указываем его размер, равный 10."<<endl;
     int testArray2[10];
-
     /*
      * С помощью цикла for проходимся по всем элементам массива.
      * С 0-ого до 9-ого.
@@ -72,8 +71,9 @@ int main()
      */
     cout<<"Заполняем массив с клавиатуры."<<endl;
     cout<<"Введите 10 целых чисел: "<<endl;
-    for(int i = 0; i < 10; i++)
-        cin>>testArray2[i];
+    for(int i = 0; i < 10; i++) {
+        testArray2[i] = i;
+    }
 
     /*
      * С помощью цикла for проходимся по всем элементам массива.
@@ -82,7 +82,7 @@ int main()
      */
     cout<<"Массив \"testArray2\" содержит следующие элементы: ";
     for(int i = 0; i < 10; i++)
-        cout<<testArray2[i]<<" ";
+        cout << testArray2[i] << " ";
 
     cout<<endl;
 

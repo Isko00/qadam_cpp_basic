@@ -29,7 +29,7 @@ using namespace std;
 
 int main() {
     char c[13] = {'h', 'e', 'l', 'l', 'o', ' ', 'W', 'O', 'R', 'L', 'D', '!'};
-    cout<<"At beginning: "<<c<<endl;
+    cout << "At beginning: " << c << endl;
 
     for (int i = 0; i < strlen(c); i++) {
         if (c[i] >= 65 && c[i] <= 90) {

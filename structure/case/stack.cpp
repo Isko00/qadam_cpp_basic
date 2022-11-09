@@ -10,10 +10,10 @@ struct Elem {
 struct Stack { 
     Elem *last;
 
-    Stack () { last = NULL; }
+    Stack() { last = NULL; }
 
     void push (int a) { 
-        Elem *temp; 
+        Elem *temp;
         temp = new Elem();
         temp->val = a;
         temp->prev = last;

@@ -10,9 +10,7 @@ struct Elem {
 struct Queue { 
     Elem *first, *last;
 
-    Queue() { 
-        first = NULL;
-    }
+    Queue() { first = NULL; }
 
     void push(int a) {
         Elem *temp;

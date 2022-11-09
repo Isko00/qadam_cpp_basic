@@ -144,7 +144,7 @@ int main() {
                   NULL NULL
     */
  
-    iterate_post(root);
+    iterate(root);
 /*
     cout << endl;
 

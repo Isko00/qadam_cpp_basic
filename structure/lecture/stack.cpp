@@ -1,22 +1,38 @@
 #include <iostream>
-#include <stack>
+#include <vector>
 
 using namespace std;
 
 int main() {
 	// создаем объект класса очередь с названием my_stack
-	stack<char> my_stack;
-	// добавляем элемент в очередь с помощью метода push
-	for (char i = 'a'; i < 'g'; i++) {
-		my_stack.push(i);
+	vector<int> v;
+	// ...
+
+	for (int i = 0; i < 5; i++) {
+		v.push_back(i);
 	}
 
-	for (char i = 0; i < 6; i++) {
-		// получаем первый элемент в очереди с помощью метода front()
-		cout << my_stack.top();
-		// метод pop() удаляет первый элемент
-		my_stack.pop();
+	// 0 1 2 3 4
+	cout << v.size() << endl;
+	// 5
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i] << endl;
 	}
-	
+	// 0 1 2 3 4
+	v.push_back(149);
+	// 0 1 2 3 4 149
+	v.size();
+	// 6
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i] << endl;
+	}
+	// 0 1 2 3 4 5 149
+	v.push_back(240);
+	// 0 1 2 3 4 5 149 240
+
+	vector<char> v2;
+	v2.push_back('a');
+	cout << v2[0];
+
 	return 0;
 }
