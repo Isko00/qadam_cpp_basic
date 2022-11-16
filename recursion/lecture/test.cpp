@@ -2,15 +2,21 @@
 
 using namespace std;
 
-void rec(int number) {
-    if (number > 0) { 
-        rec(number - 1);
+void rec(int *a) {
+    cout << *a;
+    (*a)--;
+
+    if (*a > 0) {
+        rec(a);
     }
-    cout << number << endl;
 }
 
+    // 5 4 3 2 1
+
 int main() {
-    rec(5);
+    int a = 5;
+
+    rec(&a);
 
     return 0;
 }

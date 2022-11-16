@@ -16,7 +16,7 @@ struct Node {
 };
 
 void iterate(Node *n){
-    if(n == NULL) {
+    if (n == NULL) {
         return;
     }
 
@@ -45,8 +45,7 @@ void iterate_post(Node *n){
     cout << n->data; // do something with the value
 }
 
-bool iterativeSearch(Node* root, int key)
-{
+bool iterativeSearch(Node* root, int key) {
     // Traverse until root reaches to dead end
     while (root != NULL) {
         // pass right subtree as new tree
@@ -70,11 +69,13 @@ bool iterativeRecursionSearch(Node* root, int key)
         return false;
     }
     cout << key << " " << root->data << endl;
+    
     // pass right subtree as new tree
     if (key > root->data) {
         cout << "1/" << endl;
         return iterativeRecursionSearch(root->right, key);
     }  
+    
     // pass left subtree as new tree
     if (key < root->data) {
         cout << "2/" << endl;
@@ -143,12 +144,10 @@ int main() {
                     / \
                   NULL NULL
     */
- 
-    iterate(root);
 /*
     cout << endl;
-
-    addNode(root, 1);
+*/
+    root->left->left = new Node(1);
     /* 4 becomes left child of 2
                3
             /     \
@@ -158,7 +157,10 @@ int main() {
         / \         / \
       NULL NULL   NULL NULL
     */
-    //iterate(root);
+    iterate_post(root);
+
+    // 1 2 3 4 5
+    // 5 3 2 4 1
 
     return 0;
 }
